@@ -16,8 +16,8 @@ graph TD;
     Change_embed_status --> |ปรับสถานะ datasource เป็น Embed|Check_datasource
     Check_datasource --> |ดึง Datasource อีกรอบเพื่อตรวจสอบสถานะ| Inset_data
     Inset_data --> |บันทึก log ใน SQL Server และ local| Loop_update_datasource
-    Inset_data --> End
-
+    Inset_data --> End(สิ้นสุด)
+    End -->|รอเวลา| Schedule
 
     style Start fill:#66ccff,stroke:#333,stroke-width:2px;
     style Schedule fill:#E7BDB3,stroke:#333,stroke-width:2px;
