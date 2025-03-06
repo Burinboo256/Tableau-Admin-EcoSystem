@@ -1,7 +1,7 @@
 # Change Datasource Embed Status
 
 ```mermaid
-graph LR;
+graph TD;
     Start(เริ่มต้น) -->|นำเข้า Library และ Connection จากไฟล์ Config|Schedule
     
     Schedule --> |วันจันทร์ บ่าย 3| Search_datasources
