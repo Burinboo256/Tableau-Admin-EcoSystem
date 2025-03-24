@@ -8,8 +8,8 @@ graph TD;
 
 
 
-    get_withdraw_users [panda] -->|ถ้ามีคนลาที่ลาออก|get_tableau_user
-    get_tableau_user [postage] -->|นำข้อมูลคนที่ลาออกมาค้นหาใน Tableau Database| Tableau_User
+    get_withdraw_users panda -->|ถ้ามีคนลาที่ลาออก|get_tableau_user
+    get_tableau_user postage -->|นำข้อมูลคนที่ลาออกมาค้นหาใน Tableau Database| Tableau_User
     Tableau_User -->|ถ้ามี User ใน Tableau|get_workbooks
     get_workbooks  -->|ถ้าคนที่ลาออกเคยสร้าง Workbook|get_site_luid
 
