@@ -76,7 +76,6 @@ def get_withdraw_users():
     # for test
     # query = f"SELECT 'test.del' DomainUser UNION select 'test.del2' DomainUser "
     
-    
     # Substring Domain With draw User
     cursor.execute(query)
     for row in cursor.fetchall():
@@ -170,7 +169,7 @@ def get_views(owner_id):
 
 # Query New Owner Workbook
 def get_site_luid(username):
-    
+    cur = conn.cursor()
     query_site_luid  = f"select u.id,u.luid,u.site_id,su.name username from public.users u inner join public.system_users su on u.system_user_id = su.id and su.name = '{username}'"
     cur.execute(query_site_luid)
     site_luid = cur.fetchall()
@@ -220,6 +219,7 @@ while True:
         break
     except Exception as e:
         print(e)
+
 
 
 print("เริ่มทำงานโดยเริ่มจากดึงข้อมูลผู้ที่ลาออก")
