@@ -18,7 +18,7 @@ ad_username = 'agentserveradmin'
 dryrun = False
 debuging = False
 debugad = 'test.del'
-backdate = 30
+backdate = 40
 alert_run = True
 
 # โหลดตัวแปรจากไฟล์ .env
