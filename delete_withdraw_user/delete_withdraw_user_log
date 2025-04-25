@@ -1,0 +1,22 @@
+เริ่มทำงานโดยเริ่มจากดึงข้อมูลผู้ที่ลาออก
+จำนวนผู้ที่ลาออก: 52
+['apudsanun.see', 'pichaporn.pui', 'nattanan.klo', 'siradanai.won', 'pakaporn.che', 'areeya.bua', 'kamontip.sri', 'thanapha.mua', 'patcharapa.pin', 'wuttichai.ler', 'petmada.phm', 'nichapat.hol', 'thirayada.cho', 'jittraporn.som', 'kultida.tin', 'ilada.wit', 'porntip.sai', 'chatkamol.phe', 'sunanthini.pon', 'thananphat.phi', 'kodchaporn.pha', 'dollaya.non', 'phattawee.som', 'chatkanok.tho', 'sahawich.mon', 'apichaya.sat', 'lalana.pua', 'supornchai.kog', 'piyawat.pan', 'naruemon.kru', 'suthasinee.pha', 'nattharawadi.tha', 'tanyalak.kam', 'pronpitcha.srb', 'aonuma.san', 'pongkhun.pan', 'chaiwat.sae', 'keasinee.rot', 'walailak.saa', 'sakdithep.cha', 'kasina.sal', 'sitthisat.mic', 'sukol.sih', 'supawadee.wor', 'pattarapan.boo', 'setthawut.jam', 'worakrod.kae', 'panphailin.wis', 'jirapinya.nap', 'jutiporn.iac', 'janjira.buj', 'thitisuda.ton']
+[(63762, '30b9fd73-f310-4364-93dd-65225ef51f71', 6, 'agentserveradmin', 'SirirajReport')]
+ตรวจสอบข้อมูล Tableau Site: SirirajReport
+ค้นหา User Tableau ของคนที่ลาออก
+[]
+คนที่ลาออกไม่ได้มี User ใน Tableau หรือ Site นี้
+------------------------
+[(63833, 'df2f9e52-e0ff-4f1d-baac-d3d68f91fe0b', 80, 'agentserveradmin', 'ประชาสัมพันธ์ และ คู่มือ')]
+ตรวจสอบข้อมูล Tableau Site: publicandmanuals
+ค้นหา User Tableau ของคนที่ลาออก
+[]
+คนที่ลาออกไม่ได้มี User ใน Tableau หรือ Site นี้
+------------------------
+[(63835, '99cefdf5-2475-4f9e-ae86-f6209aa800d1', 81, 'agentserveradmin', 'GJ')]
+ตรวจสอบข้อมูล Tableau Site: GJ
+ค้นหา User Tableau ของคนที่ลาออก
+[]
+คนที่ลาออกไม่ได้มี User ใน Tableau หรือ Site นี้
+------------------------
+ส่งข้อความสำเร็จ
