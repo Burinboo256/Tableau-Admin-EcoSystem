@@ -2,10 +2,8 @@
 
 ```mermaid
 graph TD;
-    Start(เริ่มต้น) -->|นำเข้า Library และ Connection จากไฟล์ Config|Schedule
+    Start(เริ่มต้น) -->|นำเข้า Library และ Connection จากไฟล์ Config|Search_datasources
     
-    Schedule --> |วันจันทร์ บ่าย 3| Search_datasources
-
     Search_datasources --> |ค้นหา Datasource ใน Workbook| Embed_password
     Embed_password --> |status = False| Connection_type
     Connection_type --> |type = sql_server| Project_name
@@ -20,7 +18,6 @@ graph TD;
 
 
     style Start fill:#66ccff,stroke:#333,stroke-width:2px;
-    style Schedule fill:#E7BDB3,stroke:#333,stroke-width:2px;
     style Search_datasources fill:#A1B6B4,stroke:#333,stroke-width:2px;
     style Embed_password fill:#A1B6B4,stroke:#333,stroke-width:2px;
     style Connection_type fill:#A1B6B4,stroke:#333,stroke-width:2px;
