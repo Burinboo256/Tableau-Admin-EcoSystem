@@ -16,7 +16,7 @@ graph TD;
     Change_embed_status --> |ปรับสถานะ datasource เป็น Embed|Inset_data
     Inset_data --> |บันทึก log ใน SQL Server และ local| Loop_update_datasource
     Inset_data -->|แจ้งเตือนผ่าน Google Chat| Message_Alert
-    Message_Alert -->|วนครบทุก Datasource แล้ว| End(สิ้นสุด)
+    Message_Alert -->|วนครบทุก Datasource| End(สิ้นสุด)
 
 
     style Start fill:#66ccff,stroke:#333,stroke-width:2px;
