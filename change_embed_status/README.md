@@ -13,11 +13,11 @@ graph TD;
     Has_extracts --> |is False|Save_datasource
     Save_datasource --> |บันทึก Datasource|Loop_update_datasource
     Loop_update_datasource -->Change_embed_status
-    Change_embed_status --> |ปรับสถานะ datasource เป็น Embed|Check_datasource
-    Check_datasource --> |ดึง Datasource อีกรอบเพื่อตรวจสอบสถานะ| Inset_data
+    Change_embed_status --> |ปรับสถานะ datasource เป็น Embed|Inset_data
     Inset_data --> |บันทึก log ใน SQL Server และ local| Loop_update_datasource
-    Inset_data -->|วนครบทุก Datasource แล้ว| End(สิ้นสุด)
-    End -->|รอเวลา| Schedule
+    Inset_data -->|แจ้งเตือนผ่าน Google Chat| Message_Alert
+    Message_Alert -->|วนครบทุก Datasource แล้ว| End(สิ้นสุด)
+
 
     style Start fill:#66ccff,stroke:#333,stroke-width:2px;
     style Schedule fill:#E7BDB3,stroke:#333,stroke-width:2px;
@@ -27,10 +27,9 @@ graph TD;
     style Project_name fill:#A1B6B4,stroke:#333,stroke-width:2px;
     style Has_extracts fill:#A1B6B4,stroke:#333,stroke-width:2px;
     style Save_datasource fill:#A1B6B4,stroke:#333,stroke-width:2px;
-
+    style Message_Alert fill:#E8CEDB,stroke:#333,stroke-width:2px;
     style Loop_update_datasource fill:#E4CA99,stroke:#333,stroke-width:2px;
     style Change_embed_status fill:#A4c9D7,stroke:#333,stroke-width:2px;
-    style Check_datasource fill:#E8CEDB,stroke:#333,stroke-width:2px;
     style Inset_data fill:#958676,stroke:#333,stroke-width:2px;
 
     style End fill:#ff6666,stroke:#333,stroke-width:2px;
