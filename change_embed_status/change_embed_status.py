@@ -249,4 +249,3 @@ cursor.close()
 conn.close()
 alert_text = f"วันที่ดำเนินการ: {datetime.now()}\nดำเนินการปรับสถานะ Datasource ให้เป็น Embeded เสร็จสิ้น\nจำนวน Datasource: {len(datasource_id)}\n"
 alert_message(alert_text)
-
